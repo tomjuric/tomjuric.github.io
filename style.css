@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+body {
+  background-color: #333333;
+  color: #fff;
+  min-width: 100vw;
+  min-height: 80vh;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    padding: 32px;
+  }
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+a[href^="mailto:tomislavjuric@icloud.com"] {
+  color: #55acee;
+
+}
+
+
+a[href^="https://www.linkedin.com/in/tomislavjurić"] {
+  color: #55acee;
+}
+
+a[href^="https://github.com/tomjuric"] {
+  color: #55acee;
+}
+
+a[href^="https://dribbble.com"] {
+  color: #55acee;
+}
+
+ul p {
+  margin: 0;
+}
