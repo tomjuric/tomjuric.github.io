@@ -1,2 +1,2 @@
-# [tomjuric.github.io](https://tomjuric.github.io)
+<a href="https://tomjuric.github.io" target="_blank"</a>
 Personal Website
