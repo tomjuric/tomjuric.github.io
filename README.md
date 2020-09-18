@@ -1,2 +1,2 @@
- [tomjuric.github.io](https://tomjuric.github.io)
+ # [tomjuric.github.io](https://tomjuric.github.io)
  Personal Website
