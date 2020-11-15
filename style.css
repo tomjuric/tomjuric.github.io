@@ -45,7 +45,11 @@ h1 {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.30rem;
+}
+
+p {
+  text-align: justify;
 }
 
 a {
