@@ -42,6 +42,7 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 400;
+  text-align: center;
 }
 
 p {
@@ -95,3 +96,11 @@ a[href^="https://www.goodreads.com/user/show/72730279-tom"] {
 ul p {
   margin: 0;
 }
+
+#profile-pic{margin-bottom:10px;border-radius:80px;}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
