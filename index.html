@@ -28,7 +28,16 @@ Contact info and Goodreads profile (to see what I'm currently reading, if you ar
       </p>
       <ul class="social-links">
         <li>
-          <p><a href="mailto:tomislavjuric@icloud.com">tomislavjuric@icloud.com</a>
+          <p>
+            <a href="email" onclick="sendEmail(); return false;">tomislavjuric[at]icloud.com</a>
+        </p>
+        <script>
+        function sendEmail() {
+            var username = 'tomislavjuric';
+            var domain = 'icloud.com';
+            window.location.href = 'mailto:' + username + '@' + domain;
+        }
+        </script>        
         </li>
         <li>
           <p><a href="https://www.linkedin.com/in/tomislavjurić" target="_blank">LinkedIn</a></p>
