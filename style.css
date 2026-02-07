@@ -1,96 +1,151 @@
-@font-face {
-  font-family: 'Inter', sans-serif;
-}
-
+/* Base Setup */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-}
-
-html {
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 40em) {
-  html {
-    font-size: 1rem;
-  }
 }
 
 body {
   background-color: #1a1a1a;
-  color: #fff;
-  min-width: 100vw;
-  min-height: 80vh;
+  color: #d1d1d1;
   font-family: "Inter", sans-serif;
+  line-height: 1.5;
 }
 
-@media screen and (min-width: 40em) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Containers */
+main {
+  width: 100%;
+  max-width: 85ch;
+  margin: 15px auto 40px auto;
+  padding: 0 20px;
 }
 
+/* Centering Utility */
+.center-text { text-align: center; }
+#profile-pic.center { display: block; margin: 0 auto 20px auto; }
+
+/* Typography */
 h1 {
   font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 p {
-  font-size: 1.30rem;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem; 
 }
 
-p {
-  text-align: justify;
-}
+strong { color: #fff; }
 
 a {
   text-decoration: none;
+  color: #55acee;
+  transition: opacity 0.2s;
 }
 
-main {
-  width: 100%;
-  max-width: 800px;
-  padding: 24px;
-}
+a:hover { opacity: 0.8; }
 
-@media screen and (min-width: 40em) {
-  main {
-    padding: 32px;
-  }
-}
-
-.social-links {
+/* Lists */
+ul {
   list-style: none;
   padding: 0;
-}
-
-a[href^="email"] {
-  color: #55acee;
-
-}
-
-a[href^="https://www.infobip.com"] {
-  color: #55acee;
-}
-
-ul p {
   margin: 0;
 }
 
-#profile-pic{margin-bottom:10px;border-radius:80px;}
-
-img {
-    display: block;
-    margin: 0 auto;
+ul li p {
+  margin: 0;
 }
 
+.blog-posts li {
+  font-size: 1.1rem;
+}
+
+.article-list {
+  margin: 0.8rem 0;
+}
+
+.article-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.article-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: #55acee;
+  font-size: 1.2rem;
+}
+
+/* Components */
+#profile-pic {
+  border-radius: 80px;
+  border: 1px solid #333;
+}
+
+.disclaimer {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.post-date-list {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Blog Article Specifics */
+article { width: 100%; }
+
+.home-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.post-date {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+
+/* Centered blog images */
+.post-image {
+  display: block;
+  margin: 1.5rem auto; /* Centers it and adds space above/below */
+  max-width: 100%;    /* Prevents it from overflowing on mobile */
+  height: auto;
+  border-radius: 4px;  /* Optional: gives it a slight clean edge */
+}
